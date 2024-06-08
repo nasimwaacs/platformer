@@ -3,7 +3,7 @@ import pygame
 # Making this Bunny a pygame sprite has some benefits... using sprite groups
 class Bunny(pygame.sprite.Sprite):
 	def __init__(self, filename="bunny.png", scale_x=1, scale_y=1, x=0, y=0, speed_x=1, speed_y=0, opacity=200, tolerance=5):
-		
+		# Create the parent sprite
 		pygame.sprite.Sprite.__init__(self)
 		
 		self.image = pygame.image.load(filename)
